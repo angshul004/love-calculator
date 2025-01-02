@@ -4,8 +4,8 @@ window.onload = function(){
 }
 
 function calculatelove(){
-    let yourname = document.getElementById("your-name").value;
-    let crushname = document.getElementById("crush-name").value;
+    let yourname = document.getElementById("your-name").value.trim();
+    let crushname = document.getElementById("crush-name").value.trim();
 
     if (yourname !== "" && crushname !== "") {
         document.getElementById("result-message").innerText = "";
