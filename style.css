@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Jost", sans-serif;
+    text-align: center;
+    background: url(bg.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+}
+h1,h2{
+    font-family: "Sour Gummy", serif;
+}
+
+#content-box {
+    background-color: rgba(254, 232, 254, 0.6);
+    backdrop-filter: blur(8px);
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 235px;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    /* Fade-in animation */
+    opacity: 0; 
+    animation: fadeIn .4s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+#your-name, #crush-name{
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255);
+}
+
+#calculate {
+    font-family: "Jost", sans-serif;
+    text-align: center;
+    font-size:medium;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    color: aliceblue;
+    border: none;
+    background-color: rgb(243, 16, 125);
+    border-radius: 10px;
+}
+
+#calculate:hover {
+    background-color: rgb(170, 12, 88);
+}
+
+#loading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.spinner {
+    margin: 10px auto;
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#result-percentage {
+    font-family: "Sour Gummy", serif;
+    font-size: 25px;
+    color: azure;
+    position: relative;
+    text-align: center;
+    background-image: url('heart.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 30px;
+}
+
+
+/* Celebration emojis */
+#celebration {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allows clicks to pass through */
+    overflow: hidden;
+}
+
+.celebration-emoji {
+    position: absolute;
+    font-size: 30px;
+    animation: floatUp 4s ease-in-out forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
+
+#youtube-link {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+#youtube-link a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+
+#youtube-link img {
+    width: 24px;
+}
+
+

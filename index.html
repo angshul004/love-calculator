@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content-box">
+        <h1>Love Calculator</h1>
+        <p>Enter your name and crush's name to see the chance:</p>
+        <br>
+        <label for="your-name">Your name:</label>
+        <input type="text" id="your-name" name="your-name">
+        <br><br>
+        <label for="crush-name">Crush's name:</label>
+        <input type="text" id="crush-name" name="crush-name">
+        <br><br>
+
+        <button id="calculate">Calculate</button>
+
+        <div id="loading" style="display: none;">
+            <p></p>
+            <div class="spinner"></div>
+        </div>
+
+        <h2 id="result-message"></h2>
+        <p id="result-percentage" style="display: none;"></p>
+    </div>
+    <div id="celebration"></div>
+
+    <footer id="youtube-link">
+        <a href="https://www.youtube.com/@angshul" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
+            @angshul
+        </a>
+    </footer>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
