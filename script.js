@@ -42,7 +42,7 @@ function calculatelove(){
                 document.getElementById("result-percentage").style.display = "block";
 
                 if((yourname == "Adrija" && crushname == "Angshul")||(yourname == "adrija" && crushname == "angshul")||(yourname == "Tathagata" && crushname == "Rikshika")||(yourname == "tathagata" && crushname == "rikshika")||(yourname == "Pushan" && crushname == "Debapriya")||(yourname == "pushan" && crushname == "debapriya")||(yourname == "Rikshika" && crushname == "Tathagata")){
-                    document.getElementById("result-percentage").innerText = "99.9%";
+                    document.getElementById("result-percentage").innerText = "100%";
                 }
                 else{
                     document.getElementById("result-percentage").innerText = percentage.toString() + "%";
